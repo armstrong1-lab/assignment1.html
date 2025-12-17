@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Registration - Validation</title>
+</head>
+
+<body>
+  <h1>User Registration Form</h1>
+  <p>Please fill in all fields. You must be 18 or older.</p>
+
+  <!-- Registration Form -->
+  <form id="registerForm" novalidate>
+    <!-- Full Name -->
+    <label for="fullName">Full Name</label><br />
+    <input type="text" id="fullName" name="fullName" required />
+    <div id="fullNameMsg"></div>
+    <br />
+
+    <!-- Email -->
+    <label for="email">Email Address</label><br />
+    <input type="email" id="email" name="email" required />
+    <div id="emailMsg"></div>
+    <br />
+
+    <!-- Password -->
+    <label for="password">Password</label><br />
+    <input type="password" id="password" name="password" required />
+    <div id="passwordMsg"></div>
+    <br />
+
+    <!-- Confirm Password -->
+    <label for="confirmPassword">Confirm Password</label><br />
+    <input type="password" id="confirmPassword" name="confirmPassword" required />
+    <div id="confirmPasswordMsg"></div>
+    <br />
+
+    <!-- Age -->
+    <label for="age">Age</label><br />
+    <input type="number" id="age" name="age" required />
+    <div id="ageMsg"></div>
+    <br />
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- External JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
